@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta con LooksMax">
+    <meta name="author" content="Tu nombre">
+    <meta name="keywords" content="contacto, looksmaxxing, looksmax">
+
+    <title>SPANISHMOG - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>SPANISHMOG</h1>
+
+        <div class="opciones">
+            <button id="tema">☼ Modo claro</button>
+
+            <select id="idioma">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+
+        <nav>
+            <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+            <a href="about.html" data-es="Sobre nosotros" data-en="About">Sobre nosotros</a>
+            <a href="services.html" data-es="Servicios" data-en="Services">Servicios</a>
+            <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="page">
+        <h2 data-es="CONTACTO" data-en="CONTACT">CONTACTO</h2>
+
+        <form id="formulario">
+            <label for="nombre" data-es="Nombre" data-en="Name">Nombre</label>
+            <input type="text" id="nombre" required
+                   placeholder="Tu nombre"
+                   data-placeholder-es="Tu nombre"
+                   data-placeholder-en="Your name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required
+                   placeholder="Tu email"
+                   data-placeholder-es="Tu email"
+                   data-placeholder-en="Your email">
+
+            <label for="mensaje" data-es="Mensaje" data-en="Message">Mensaje</label>
+            <textarea id="mensaje" required
+                      placeholder="Escribe tu mensaje"
+                      data-placeholder-es="Escribe tu mensaje"
+                      data-placeholder-en="Write your message"></textarea>
+
+            <button type="submit" data-es="ENVIAR" data-en="SEND">ENVIAR</button>
+            <p id="respuesta"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2026 SPANISHMOG</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
